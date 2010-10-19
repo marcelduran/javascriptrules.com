@@ -1,1 +1,13 @@
-My GitHub Page
+---
+layout: default
+title: JavaScript Rules
+---
+
+<ul class="posts">
+    {% for post in site.posts limit:10 %}
+        <li>
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <span>{{ post.date | date_to_string }} by {{ post.author }}</span>
+        </li>
+    {% endfor %}
+</ul>
