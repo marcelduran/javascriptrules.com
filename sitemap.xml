@@ -1,123 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://javascriptrules.com/sitemap.xsl"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-        <url>
-		<loc>http://javascriptrules.com/</loc>
-		<lastmod>2010-04-28T22:43:43+00:00</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1.0</priority>
-	</url>
-	<url>
-		<loc>http://javascriptrules.com/2010/08/25/web-metrics-framework/</loc>
-		<lastmod>2010-08-25T22:43:43+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://javascriptrules.com/2010/04/27/new-posts-about-performance-back-and-alive/</loc>
-		<lastmod>2010-04-28T22:43:43+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://javascriptrules.com/2009/08/12/string-searching-algorithms-in-javascript-engines/</loc>
-		<lastmod>2010-04-13T22:16:05+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://javascriptrules.com/2009/06/30/limitation-on-call-stacks/</loc>
-		<lastmod>2010-04-13T22:12:42+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://javascriptrules.com/2009/07/01/whats-going-on-with-firebug/</loc>
-		<lastmod>2010-04-13T22:12:13+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://javascriptrules.com/2009/07/22/cross-browser-event-listener-with-design-patterns/</loc>
-		<lastmod>2010-04-13T22:11:32+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://javascriptrules.com/2009/08/05/css-color-brightness-contrast-using-javascript/</loc>
-		<lastmod>2010-04-13T22:10:35+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://javascriptrules.com/2009/09/17/webkit-page-cache/</loc>
-		<lastmod>2010-04-13T22:10:07+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://javascriptrules.com/2009/09/23/fast-minmax-in-arrays/</loc>
-		<lastmod>2010-04-13T22:05:32+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>http://javascriptrules.com/2009/10/06/javascript-challenge-revisited-lotto-number-generator-in-chains/</loc>
-		<lastmod>2010-04-13T22:04:57+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>http://javascriptrules.com/2009/10/16/finding-prime-numbers-with-javascript/</loc>
-		<lastmod>2010-04-13T21:35:37+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://javascriptrules.com/2009/09/29/yui-3-first-release-is-out/</loc>
-		<lastmod>2009-09-30T01:28:13+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://javascriptrules.com/2009/09/27/harnessing-the-juice-out-of-yahoo-pipes/</loc>
-		<lastmod>2009-09-27T14:49:41+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-	<url>
-		<loc>http://javascriptrules.com/2010/04/</loc>
-		<lastmod>2010-04-28T02:33:57+00:00</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>http://javascriptrules.com/2009/10/</loc>
-		<lastmod>2009-10-16T17:45:05+00:00</lastmod>
-		<changefreq>yearly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>http://javascriptrules.com/2009/09/</loc>
-		<lastmod>2009-09-30T01:28:13+00:00</lastmod>
-		<changefreq>yearly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>http://javascriptrules.com/2009/08/</loc>
-		<lastmod>2009-08-12T03:05:34+00:00</lastmod>
-		<changefreq>yearly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>http://javascriptrules.com/2009/07/</loc>
-		<lastmod>2009-07-22T08:55:40+00:00</lastmod>
-		<changefreq>yearly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>http://javascriptrules.com/2009/06/</loc>
-		<lastmod>2009-06-30T11:12:00+00:00</lastmod>
-		<changefreq>yearly</changefreq>
-		<priority>0.3</priority>
-	</url>
+---
+layout: nil
+site_pages:
+  - /
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% for site_page in page.site_pages %}
+<url>
+  <loc>http://javascriptrules{{site_page}}</loc>
+  <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  <changefreq>hourly</changefreq>
+</url>
+{% endfor %}
+{% for post in site.posts %}
+<url>
+  <loc>http://javascriptrules.com{{ post.url }}</loc>
+  <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+  <changefreq>hourly</changefreq>
+</url>
+{% endfor %}
 </urlset>

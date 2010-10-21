@@ -9,11 +9,11 @@ Matthias Reuter from <a href="http://www.united-coders.com/" target="_blank">Uni
 
 The function has to look like this
 
-<pre lang="javascript">
+{% highlight js %}
 var getRandomLottoNumbers = function () {
     // your implementation here
 };
-</pre>
+{% endhighlight %}
 Minify your function using <a href="http://javascript.crockford.com/jsmin.html" target="_blank">JSMin</a> (level aggressive) and count the bytes between the outer curly braces.</blockquote>
 
 <!--more-->It might look simple but it turns out to be an interesting challenge considering there's a bunch of ways to solve it where the length of the minified final implementation is the main concern: the smaller the better. He describes his solution and invites others to post their solutions as comments. His final solution for such challenge has 86 bytes:
@@ -47,7 +47,7 @@ return [0,0,0,0,0,0].join().replace(/0/g,function(){Array.a=Array.a||{};var x;wh
 </pre>
 
 It's not the smallest compared to the other solutions but it does fulfill the rules and is in a single line chaining. It might be a little obscure for some but I will break it down into smaller peaces:
-<pre lang="javascript">
+{% highlight js %}
 return
     [0,0,0,0,0,0]   // creates an array with 6 positions filled with 0's
     .join()         // converts the array into string: "0,0,0,0,0,0"
@@ -71,6 +71,6 @@ return
             return a - b    // < 0 then a < b; = 0 then a = b; > 0 a > b
         }
     )               // end of sort, a sorted array is returned
-</pre>
+{% endhighlight %}
 
 I also invite you to post your single line chaining solution as a comment. Happy chaining. ;-)

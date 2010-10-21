@@ -1,6 +1,6 @@
 ---
 layout: default
-title: JavaScript Rules
+title: Home
 ---
 
 <ul class="posts">
@@ -8,6 +8,8 @@ title: JavaScript Rules
         <li>
             <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
             <span>{{ post.date | date_to_string }} by {{ post.author }}</span>
+            <p><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b, %Y" }}</time></p>
+            <div>{{ post.content | strip_html | truncatewords: 50 }}</div>
         </li>
     {% endfor %}
 </ul>
