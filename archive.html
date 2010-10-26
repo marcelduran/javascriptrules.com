@@ -1,0 +1,33 @@
+---
+layout: default
+title: Archive
+---
+
+<ul class="posts">
+    {% for post in site.posts %}
+        <li>
+            <span><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b, %Y" }}</time></span>
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <a class="comments" href="{{ post.url }}#disqus_thread">View Comments</a>
+        </li>
+    {% endfor %}
+</ul>
+
+<script>
+    var disqus_developer = 1;
+    (function (d, t) {
+        for (var h = d.getElementsByTagName(t)[0],
+            s = d.createElement(t),
+            k = d.getElementsByTagName('a'),
+            q = '?',
+            i = 0,
+            l, r; l = k[i]; i++) {
+            if ((r = l.href) && r.indexOf('#disqus_thread') > -1) {
+                q += 'url' + i + '=' + encodeURIComponent(r) + '&';
+            }
+        }
+        s.src = 'http://disqus.com/forums/markreid/get_num_replies.js' + q;
+        s.async = 1;
+        h.parentNode.insertBefore(s, h);
+    }(document, 'script'));
+</script>
