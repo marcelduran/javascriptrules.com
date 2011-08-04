@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+    <title>JavaScript Rules - {% if page.tag != null %}{{ page.tag }}{% else %}{{ page.category }}{% endif %}</title>
+    <link href="{{ site.uri }}/{% if page.tag != null %}tag/{{ page.tag }}{% else %}category/{{ page.category }}{% endif %}.xml" rel="self"/>
+    <link href="{{ site.uri }}"/>
+    <updated>{{ site.time | date_to_xmlschema }}</updated>
+    <id>http://javascriptrules.com/{% if page.tag != null %}tag/{{ page.tag }}{% else %}category/{{ page.category }}{% endif %}</id>
+    <author>
+        <name>Marcel Duran</name>
+        <email>marcelduran@gmail.com</email>
+    </author>
+ 
+    {% for post in site.posts %}
+    {% for tag in post.tags %}
+    {% if tag == page.tag %}
+    <entry>
+        <title>{{ post.title }}</title>
+        <link href="{{ site.uri }}{{ post.url }}"/>
+        <updated>{{ post.date | date_to_xmlschema }}</updated>
+        <id>{{ post.id }}</id>
+        <content type="html">{{ post.content | xml_escape }}</content>
+    </entry>
+    {% endif %}
+    {% endfor %}
+    {% for category in post.categories %}
+    {% if category == page.category %}
+    <entry>
+        <title>{{ post.title }}</title>
+        <link href="{{ site.uri }}{{ post.url }}"/>
+        <updated>{{ post.date | date_to_xmlschema }}</updated>
+        <id>{{ post.id }}</id>
+        <content type="html">{{ post.content | xml_escape }}</content>
+    </entry>
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+ 
+</feed>
