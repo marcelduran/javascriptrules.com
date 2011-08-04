@@ -2,29 +2,27 @@
 layout: default
 ---
 <div id="post">
-{{ content }}
+    <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+    <div class="metadata">
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b, %Y" }}</time>
+        <span>by {{ page.author }}</span>
+    </div>
+    <div class="entry">{{ content }}</div>
+    <div class="metadata">
+        Tags:
+        {% for tag in page.tags %}
+            <a href="/tag/{{ tag | first }}.xml">{{ tag | first }}</a>
+            {% if forloop.rindex0 != 0 %}|{% endif %}
+        {% endfor %}
+        <br>
+        Category:
+        {% for category in page.categories %}
+            <a href="/category/{{ category | first }}.xml">{{ category | first }}</a>
+            {% if forloop.rindex0 != 0 %}|{% endif %}
+        {% endfor %}
+    </div>
 </div>
 
 <div id="disqus_thread"></div>
-<script type="text/javascript">
-  /**
-    * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
-    */
-  var disqus_developer = 1;
-  (function() {
-   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-   dsq.src = 'http://javascriptrules.disqus.com/embed.js';
-   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
-</script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=javascriptrules">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-<script type="text/javascript">
-var disqus_shortname = 'javascriptrules';
-(function () {
-  var s = document.createElement('script'); s.async = true;
-  s.src = 'http://disqus.com/forums/javascriptrules/count.js';
-  (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-}());
-</script>
-
+<script>{% include comments-min.js %}</script>

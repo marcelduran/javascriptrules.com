@@ -1,2 +1,5 @@
+name: JavaScript Rules
+uri: http://javascriptrules.com
 pygments: true
-permalink: pretty
+permalink: /:year/:month/:day/:title
+paginate: 6

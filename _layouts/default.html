@@ -3,31 +3,36 @@
     <head>
         <meta charset="utf-8">
         <title>JavaScript Rules - {{ page.title }}</title>
+        <meta name="author" content="Marcel Duran">
+        <link href="http://feeds.feedburner.com/javascriptrules" rel="alternate" title="JavaScript Rules" type="application/atom+xml">
+        <style type="text/css">{% include style-min.css %}{% include syntax-min.css %}</style>
     </head>
     <body>
-        <div id="page">
+        <div id="doc">
 
-            <div id="header">
-                <h1>JavaScript Rules</h1>
+            <div class="hd">
+                <h1><a href="/">JavaScript Rules</a></h1>
+                <form id="search" action="http://search.yahoo.com/search" target="_blank">
+                    <input type="hidden" name="vs" value="javascriptrules.com">
+                    <input id="sbx" type="text" name="p">
+                    <label id="lbl" for="sbx">Search...</label>
+                </form>
+                <span id="rss"><a href="http://feeds.feedburner.com/JavaScriptRules" target="_blank">RSS</a></span>
             </div>
 
-            <div id="wrapper">
-
+            <div class="bd">
                 <div id="content">
                 {{ content }}
                 </div>
-
-                <div id="sidebar">
-                </div>
-
             </div>
 
-            <div id="footer">
+            <div class="ft">
                 <p>Disclaimer: Any viewpoints and opinions expressed in this blog are those of the authors and do not, in any way, reflect those of Yahoo! or anyone else.</p>
+                <p class="copyright">Copyright &copy; 2009 - 2011 Marcel Duran. Hosted on GitHub, powered by Jekyll and Disqus.</p>
             </div>
 
         </div>
 
-        <script>(function(d,t){var h=d.getElementsByTagName(t)[0],s=d.createElement(t);_gaq=[['_setAccount','UA-8130902-1'],['_trackPageview']];s.src='http://www.google-analytics.com/ga.js';s.async=true;h.parentNode.insertBefore(s,h);}(document,'script'));</script>
+        <script>{% include ga-min.js %}{% include blog-min.js %}</script>
     </body>
 </html>
