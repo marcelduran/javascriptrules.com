@@ -54,7 +54,7 @@ DISCLAIMER: This extension is not related with Google Inc. or Yahoo! Inc.
  [6]: http://github.com/stoyan/Web-Testing-Framework/
  [7]: http://labs.javascriptrules.com/wmf/
  [8]: http://getfirebug.com/
- [9]: /images/wmf.png
+ [9]: {{ site.uri }}/images/wmf.png
  [10]: http://github.com/marcelduran/Web-Metrics-Framework
  [11]: https://addons.mozilla.org/en-US/firefox/addon/221495/
  [12]: http://labs.javascriptrules.com/wmf/download/

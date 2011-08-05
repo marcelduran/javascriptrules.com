@@ -71,6 +71,6 @@ if (brightness > 125) {
  [2]: http://www.w3.org/WAI/ER/WD-AERT/#color-contrast
  [3]: http://www.greasespot.net/
  [4]: http://userscripts.org/scripts/show/53262
- [5]: /images/doug-css-colors.png
+ [5]: {{ site.uri }}/images/doug-css-colors.png
  [6]: http://www.crockford.com/wrrrld/color.html
  [7]: http://www.quirksmode.org/dom/getstyles.html
