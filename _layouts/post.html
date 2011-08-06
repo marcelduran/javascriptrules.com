@@ -2,7 +2,7 @@
 layout: default
 ---
 <div id="post">
-    <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+    <h2><a href="{{ site.uri }}{{ page.url }}">{{ page.title }}</a></h2>
     <div class="metadata">
         <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b, %Y" }}</time>
         <span>by {{ page.author }}</span>
@@ -11,13 +11,13 @@ layout: default
     <div class="metadata">
         Tags:
         {% for tag in page.tags %}
-            <a href="/tag/{{ tag | first }}.xml">{{ tag | first }}</a>
+            <a href="{{ site.uri }}/tag/{{ tag | first }}.xml">{{ tag | first }}</a>
             {% if forloop.rindex0 != 0 %}|{% endif %}
         {% endfor %}
         <br>
         Category:
         {% for category in page.categories %}
-            <a href="/category/{{ category | first }}.xml">{{ category | first }}</a>
+            <a href="{{ site.uri }}/category/{{ category | first }}.xml">{{ category | first }}</a>
             {% if forloop.rindex0 != 0 %}|{% endif %}
         {% endfor %}
     </div>
