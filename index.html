@@ -23,7 +23,7 @@ title: Home
                 <a href="{{ site.uri }}/category/{{ category | first }}.xml">{{ category | first }}</a>
                 {% if forloop.rindex0 != 0 %}|{% endif %}
             {% endfor %}
-            <a class="comments" href="{{ site.uri }}{{ post.url }}#disqus_thread">View Comments</a>
+            <a class="comments" href="{{ site.uri }}{{ post.url }}/#disqus_thread">View Comments</a>
         </div>
     </div>
     {% endfor %}
