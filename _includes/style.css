@@ -222,8 +222,9 @@ em {
 }
 
 #rss {
-    background: #fff;
+    background: #FFA500;
     border: 1px solid #FFA500;
+    border-width: 1px 0;
     bottom: .4em;
     padding: 1px;
     position: absolute;
@@ -232,7 +233,7 @@ em {
 
 #rss a,
 #rss a:hover {
-    background: #FFA500;
+    border: 1px solid #fff;
     color: #fff;
     font-weight: bold;
     padding: 0 .25em;
