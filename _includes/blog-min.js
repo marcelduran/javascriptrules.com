@@ -1,1 +1,0 @@
-(function(c){var b=c.getElementById("lbl"),a=c.getElementById("sbx");a.onfocus=function(){b.className="offscreen"};a.onblur=function(){if(!a.value){b.className=""}}}(document));

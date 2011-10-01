@@ -175,31 +175,18 @@ em {
 }
 
 #search input {
-    background: #5AA5CF;
+    background: #FFF;
     border: 1px solid #69B;
     border-radius: .3em;
     -moz-border-radius: .3em;
     -webkit-border-radius: .3em;
-    color: #EEE;
+    color: #999;
     padding: .5em;
     width: 15em;
 }
 
 #search input:focus {
-    background: #fff;
     color: #333;
-}
-
-#search label {
-    color: #EEE;
-    position: absolute;
-    right: 0;
-    top: .6em;
-    width: 15em;
-}
-
-#search label.offscreen {
-    top: -999em;
 }
 
 .entry table {
