@@ -1,10 +1,10 @@
-(function (doc, tag) {
-    var h = doc.getElementsByTagName(tag)[0],
-        s = doc.createElement(tag);
-
+(function (doc, tag, place, script) {
+    place = doc.getElementsByTagName(tag)[0];
+    script = doc.createElement(tag);
     _gaq = [['_setAccount', 'UA-8130902-1'],
         ['_trackPageview'], ['_trackPageLoadTime']];
-    s.src = 'http://www.google-analytics.com/ga.js';
-    s.async = 1;
-    setTimeout(function () {h.parentNode.insertBefore(s, h);}, 0);
+    script.src = '//www.google-analytics.com/ga.js';
+    setTimeout(function () {
+        place.parentNode.insertBefore(script, place);
+    }, 0);
 }(document, 'script'));

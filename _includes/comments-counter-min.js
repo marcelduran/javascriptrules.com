@@ -1,1 +1,1 @@
-var disqus_shortname="javascriptrules";(function(d,a){var c=d.getElementsByTagName(a)[0],b=d.createElement(a);b.src="http://javascriptrules.disqus.com/count.js";b.async=1;setTimeout(function(){c.parentNode.insertBefore(b,c)},0)}(document,"script"));
+disqus_shortname="javascriptrules";(function(d,a,b,c){b=d.getElementsByTagName(a)[0];c=d.createElement(a);c.src="//javascriptrules.disqus.com/count.js";setTimeout(function(){b.parentNode.insertBefore(c,b)},0)}(document,"script"));

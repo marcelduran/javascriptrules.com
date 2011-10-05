@@ -1,1 +1,1 @@
-(function(d,a){var c=d.getElementsByTagName(a)[0],b=d.createElement(a);_gaq=[["_setAccount","UA-8130902-1"],["_trackPageview"],["_trackPageLoadTime"]];b.src="http://www.google-analytics.com/ga.js";b.async=1;setTimeout(function(){c.parentNode.insertBefore(b,c)},0)}(document,"script"));
+(function(d,a,b,c){b=d.getElementsByTagName(a)[0];c=d.createElement(a);_gaq=[["_setAccount","UA-8130902-1"],["_trackPageview"],["_trackPageLoadTime"]];c.src="//www.google-analytics.com/ga.js";setTimeout(function(){b.parentNode.insertBefore(c,b)},0)}(document,"script"));
