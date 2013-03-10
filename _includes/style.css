@@ -227,6 +227,11 @@ em {
     padding: 0 .25em;
 }
 
+.ft a {
+  color: #fff;
+  text-decoration: underline;
+}
+
 @media screen and (max-device-width: 480px) {
     #doc {
         margin: auto;
