@@ -1,7 +1,7 @@
 (function (doc, tag, place, script) {
     place = doc.getElementsByTagName(tag)[0];
     script = doc.createElement(tag);
-    _gaq = [['_setAccount', 'UA-8130902-1'],
+    _gaq = [['_setAccount', 'UA-39156028-1'],
         ['_trackPageview'], ['_trackPageLoadTime']];
     script.src = '//www.google-analytics.com/ga.js';
     setTimeout(function () {
